@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сдача ГТО</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <h2>Меню</h2>
+        <ul>
+          <li>
+            <a
+              href="/Users/abonent/Desktop/Работа/Преподавание/Репетиторство/Александр html/сайт по ГТО/сайт/Главная страница /index.html"
+              >Главная</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Users/abonent/Desktop/Работа/Преподавание/Репетиторство/Александр html/сайт по ГТО/сайт/ИМТ/in.html"
+              >ИМТ</a
+            >
+          </li>
+          <li>
+            <a
+              href="/Users/abonent/Desktop/Работа/Преподавание/Репетиторство/Александр html/сайт по ГТО/сайт/История/istory.html"
+              >История</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <h1>Сдача ГТО</h1>
+        <form id="gtoForm">
+          <label for="age">Возраст:</label>
+          <input type="text" id="age" required />
+
+          <label for="gender">Пол:</label>
+          <select id="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+          </select>
+
+          <label for="badge">Выберите значок:</label>
+          <select id="badge" required>
+            <option value="gold">Золотой</option>
+            <option value="silver">Серебряный</option>
+            <option value="bronze">Бронзовый</option>
+          </select>
+
+          <button type="submit">Отправить</button>
+        </form>
+        <div id="result" style="display: none">
+          <h2>Нормы ГТО</h2>
+          <table class="result-table" id="normsTable">
+            <thead>
+              <tr>
+                <th>Упражнение</th>
+                <th>Нормы</th>
+                <th>Ваш результат</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <p id="output"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
